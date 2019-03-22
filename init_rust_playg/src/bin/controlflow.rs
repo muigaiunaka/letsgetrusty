@@ -49,4 +49,18 @@ fn main() {
         3 => println!("three"),
         _ => println!("default"),
     }
+    let _um = 15;
+    match _um {
+        1 => println!("juan"),
+        2 | 3 | 5 | 7 | 11 => println!("optimus prime"),
+        13 ... 19 => println!("not prime but teen"),
+        _ => println!("default"),
+    }
+
+    let _match_tuple = (0, -2);
+    match _match_tuple {
+        (0, y) => println!("{}", y),
+        (x, 0) => println!("{}", x),
+        _ => println!("no manches"),
+    }
 }
